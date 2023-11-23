@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Inserta algo antes</p>
+<p>Inserta algo antes</p> 
+<input type="text" placeholder="entrada de texto">
+<input type="email" placeholder="correo">
+<style>
+    body>p::before{
+        content: "hola";
+        background-color: blue;
+    }
+
+    
+    body > p:nth-child(2)::after{
+        content: "adios";
+        background-color: aqua;        
+    }
+    input[type="text"]{
+        background-color: blue;
+    }
+
+    input[type="text"],input[type="email"]{
+        background-color: blue;
+    }
+</style>  
+</body>
+</html>

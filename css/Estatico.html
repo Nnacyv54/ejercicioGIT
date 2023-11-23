@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+
+<div class="elementos ">posicionamiento estatico</div>
+<!-- <div class="elementos relativo">posicionamiento estatico</div> -->
+<!-- <div class="elementos absoluto">absoluto </div> -->
+
+
+<div class="padre">
+    posicionamiento relativo padre
+    <div class="elementos hijo"> Posicionamiento relativo hijo</div>
+</div>  
+ <style>
+    .relativo{
+        position: relative;
+        top: 20px;
+        left: 100px;
+    }
+    .absoluto{
+        position: absolute;
+        top:20px;
+        left:100px
+    }
+    /* .estatico{ 
+        top: 20px;
+    }  */
+    .padre{
+        border: 2px solid #0074d9;
+        color: #0074d9;
+        padding: 20px;
+    }
+    .hijo{
+        position: relative;
+        top: 500px;
+    }
+    .elementos {
+        border: 1px dotted #000;
+        background-color: #eee;
+        padding: 20px;
+        color: #000;
+        top: 50px;
+    }
+</style>
+
+<body>
+    
+</body>
+</html>

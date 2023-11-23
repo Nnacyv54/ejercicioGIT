@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+<div id="container">
+    <div id="c1" class="hijos">header</div>
+    <div id="c2" class="hijos">main</div>
+    <div id="c3" class="hijos">sidebar</div>
+    <div id="c4" class="hijos">footer</div>  
+</div>
+<style>
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(minmax(250px, 350px));
+        
+        grid-template-areas:
+                "header header header header"
+                "main main . sidebar"
+                "footer footer footer footer";
+
+    }
+
+    #c1 {
+        grid-area: header;
+    }
+
+    #c2 {
+        grid-area: main;
+    }
+
+    #c3 {
+        grid-area: sidebar;
+    }
+    
+    #c4 {
+        grid-area: footer;
+    }
+
+    .hijos {
+        height: 100px;
+        width: auto;
+        border: black 1px solid;
+    }
+
+    #c1 {
+        background-color: tomato;
+    }
+
+    #c2 {
+        background-color: violet;
+    }
+
+    #c3 {
+        background-color: greenyellow;
+    }
+
+    #c4 {
+        background-color: blueviolet;
+    }
+</style>     
+</body>
+</html>

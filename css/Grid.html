@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<div id="padre">
+    <div id="c1" class="hijos">1</div>
+    <div id="c2" class="hijos">2</div>
+    <div id="c3" class="hijos">3</div>
+    <div id="c4" class="hijos">4</div>
+    <div id="c5" class="hijos">5</div>
+</div>
+<style>
+    #padre {
+        display: grid; 
+        grid-template-columns: minmax(300px, 1fr) minmax(500px, 600px); 
+        /* grid-template-rows: 10px 50px 200px; */
+        
+         background-color: cadetblue;
+    }
+
+    .hijos {
+        height: 100px;
+        width: auto;
+        border: black 1px solid;
+    }
+
+    #c1 {
+        background-color: tomato;
+    }
+
+    #c2 {
+        background-color: violet;
+    }
+
+    #c3 {
+        background-color: greenyellow;
+    }
+
+    #c4 {
+        background-color: blueviolet;
+    }
+
+    #c5 {
+        background-color: brown;
+    }
+
+</style>   
+</body>
+</html>
