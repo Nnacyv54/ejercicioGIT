@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+<div id="padre">
+    <div id="c1" class="hijos">1</div>
+    <div id="c2" class="hijos">2</div>
+    <div id="c3" class="hijos">3</div>
+    <div id="c4" class="hijos">4</div>
+
+</div>
+<style>
+    #padre {
+        display: grid; 
+        grid-template-rows: 50px 100px 200px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        flex-direction: column-reverse;
+         background-color: black;
+         gap: 50px;
+         grid-template-areas:
+                "1 2 3 4"
+                "2 2 3 5"
+                "1 2 3";
+    }
+
+    .hijos {
+        height: 100px;
+        width: auto;
+        border: black 1px solid;
+        flex-direction: column;
+        
+                
+    }
+
+    #c1 {
+        background-color: tomato;
+    }
+
+    #c2 {
+        background-color: violet;
+    }
+
+    #c3 {
+        background-color: greenyellow;
+    }
+
+    #c4 {
+        background-color: blueviolet;
+    }
+
+   
+
+</style>   
+</body>
+</html>
