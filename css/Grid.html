@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <body>
 
-<div id="padre">
-    <div id="c1" class="hijos">1</div>
-    <div id="c2" class="hijos">2</div>
-    <div id="c3" class="hijos">3</div>
-    <div id="c4" class="hijos">4</div>
-    <div id="c5" class="hijos">5</div>
+<div class="padre">
+    <div class="c1 hijos">1</div>
+    <div class="c2 hijos">2</div>
+    <div class="c3 hijos">3</div>
+    <div class="c4 hijos">4</div>
+    <div class="c5 hijos">5</div>
 </div>
+
+
 <style>
-    #padre {
-        display: grid; 
-        grid-template-columns: minmax(300px, 1fr) minmax(500px, 600px); 
-        /* grid-template-rows: 10px 50px 200px; */
-        
-         background-color: cadetblue;
+
+
+
+
+    .padre {
+        display: inline-grid; 
+        grid-template-columns: 200px 200px 200px; 
+        background-color: cadetblue;
+        justify-items: stretch;
+        height: 700px;
+        justify-content: space-evenly;
+        width: 100%;
+         
     }
 
     .hijos {
         height: 100px;
-        width: auto;
-        border: black 1px solid;
+        border: black 1px;
+        width: 500px;
     }
 
-    #c1 {
-        background-color: tomato;
+    .c1 {
+        background-color: #e82b21;
     }
 
-    #c2 {
+    .c2 {
         background-color: violet;
     }
 
-    #c3 {
+    .c3 {
         background-color: greenyellow;
     }
 
-    #c4 {
+    .c4 {
         background-color: blueviolet;
     }
 
-    #c5 {
+    .c5 {
         background-color: brown;
     }
+
+@media only screen and (min-width: 251px) and (max-width: 599px){
+
+    .hijos{
+        background-color: white;
+        width: 50px;
+    }
+} 
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+    .hijos{
+    background-color: black;
+    width: 100px;
+}
+}
+
+    .c1{
+        grid-column: 3;
+        display: none;
+    }
+
 
 </style>   
 </body>

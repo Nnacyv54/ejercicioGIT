@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" placeholder="Ex. New York" />
+      <img src="./lupa.png" alt="" />
+    </div>
+    <style>
+      body {
+        background-color: gray;
+      }
+
+      div {
+        width: fit-content;
+        position: relative;
+      }
+
+      input {
+        background-color: transparent;
+        height: 100%;
+        width: 300px;
+        border: white solid 1px;
+        border-radius: 20px;
+        color: white;
+        padding: 8px 24px;
+      }
+
+      input::placeholder {
+        color: white;
+      }
+
+      img {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-30px, -50%);
+        cursor: pointer;
+      }
+    </style>
+  </body>
+</html>
