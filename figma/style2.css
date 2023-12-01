@@ -16,6 +16,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  width: 205.1vh;
 }
 
 
@@ -63,7 +64,7 @@
   text-decoration: none;
   color: var(--color-black);
   font-family: var(--font-family-lato);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .home_section__presentation {
@@ -84,7 +85,7 @@
   z-index: 1;
   position: absolute;
   height: 100%;
-
+  width: 100vh;
 }
 
 
