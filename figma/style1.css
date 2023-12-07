@@ -85,7 +85,19 @@ main img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  position: relative;
 }
 
+.social_one {
+  position: absolute;
+  z-index: 999;
+  left: 20px;
 
+  display: flex;
+  flex-direction: column;
+}
+
+.social_one p {
+  transform: rotate(90);
+}
 
