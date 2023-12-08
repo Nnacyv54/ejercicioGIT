@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 
@@ -181,7 +181,7 @@ main img  {
   cursor: pointer;
   font-size: 16px;
   width: 350px;
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center; 
   background: url('../img/Group 241.png') no-repeat right; 
@@ -189,7 +189,8 @@ main img  {
   cursor: pointer;
   right: 2px;
 }
- 
+
+
 .social-image-container {
   position: relative;
 }
@@ -206,5 +207,37 @@ main img  {
   left: 0;
   opacity: 0.5;
 }
+
+.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} 
+
+.contenedor-imagenes {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  overflow-x: hidden;
+  gap: 10px;
+}
+
+.imagenes {
+  grid-column: span 5;
+
+}
+.imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active {
+  grid-column: 2;
+}
+
+html {
+  font-family: Play;
+}
+
+
 
 
