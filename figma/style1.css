@@ -25,6 +25,7 @@
   color: var(--color-black);
   font-family: var(--font-family-lato);
   font-size: 18px;
+  cursor: pointer;
 }
 
 .navbar_header .navbar_nav a .navbar_logo {

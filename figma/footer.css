@@ -7,7 +7,7 @@
     background: #26282B;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
+    column-gap: 10px;
     align-items: center;
     justify-content: center;
     margin: 0 5%;
