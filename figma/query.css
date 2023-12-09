@@ -16,13 +16,8 @@
      
 }
 
-.contenedor {
-    display: flex;
-    
-  }
   
-  
-  @media only screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .contenedor {
       flex-direction: column;
       
@@ -42,19 +37,7 @@
     margin-bottom: 20px;
   }
   
-  
- 
-  @media only screen and (max-width: 600px) {
-    .imagenes-galeria {
-      width: 100%;
-    }
-  
-    .desc-img-gal {
-      font-size: 0.8em; /
-    }
-  }
-
-  
+    
   #miniForm {
     margin-top: 20px;
   }
@@ -263,8 +246,8 @@
     text-decoration: none;
 }
 
-#copyright{
-    font-style: normal;
+#copyright{ 
+  font-style: normal;
     font-weight: 100;
     font-size: 15px;
     line-height: 45px;
@@ -274,8 +257,11 @@
     border-top: 1px solid white;
     padding-top: 1%;
     background: #000000;
+
 }
- 
+    
+
+
 
     
 

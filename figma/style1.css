@@ -317,6 +317,16 @@ h2 {
 
 .contenedor-textos {
   padding: 0 10px;
+  
+}
+
+
+.contenedor-textos .textos1 {
+  text-align: right;
+}
+
+.contenedor-textos .textos2 {
+  text-align: left;
 }
 
 .botones {
@@ -381,8 +391,10 @@ h2 {
 
 .contenedor-textos2 {
   padding: 0 10px;
+  
 }
 
 .contenedor-imagen-izquierda {
   padding-left: 50px;
 }
+
