@@ -205,7 +205,6 @@ html {
   font-family: Play;
 }
 
-
 span {
   color: rgb(160, 160, 30);
   font-size: 20px;
@@ -248,6 +247,13 @@ h2 {
   display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+}
+
+#primer-contenedor {
+  margin-top: 118px;
+}
+#segundo-contenedor {
+  margin-top: 174px;
 }
 
 .contenedor-textos,
@@ -316,17 +322,40 @@ h2 {
 }
 
 .contenedor-textos {
-  padding: 0 10px;
-  
+  padding: 0 3%;
 }
 
-
-.contenedor-textos .textos1 {
+.galeria-izq-textos {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   text-align: right;
 }
 
-.contenedor-textos .textos2 {
-  text-align: left;
+.contenedor-textos > div > span {
+  font-family: PF Regal Display Pro;
+  color: #df991b;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.contenedor-textos > div > h2 {
+  font-family: PF Regal Display Pro;
+  color: #000;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.contenedor-textos > div > p {
+  color: #000;
+  font-family: Brandon Grotesque;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 330;
+  margin-top: 51px;
+  margin-right: 70px;
 }
 
 .botones {
@@ -335,10 +364,31 @@ h2 {
   justify-content: space-between;
 }
 
+#galeria-inferior {
+  margin-top: 157px;
+  margin-bottom: 152px;
+}
+
 .contenedor-titulo-medio {
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
+}
+
+.contenedor-titulo-medio > span {
+  color: #df991b;
+  font-family: PF Regal Display Pro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.contenedor-titulo-medio > h3 {
+  color: #000;
+  font-family: PF Regal Display Pro;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .contenedor-imagenes-galeria {
@@ -383,18 +433,25 @@ h2 {
   background-color: #fff;
 }
 
-.contenedor-textos2,
+.desc-img-gal > p {
+  color: #464547;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.desc-img-gal > h3 {
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+} 
+
 .contenedor-imagen-izquierda {
   flex-grow: 1;
   width: 100%;
 }
 
-.contenedor-textos2 {
-  padding: 0 10px;
-  
-}
-
 .contenedor-imagen-izquierda {
   padding-left: 50px;
 }
-
