@@ -1,11 +1,12 @@
-//[1, 2, true, 66, 55, 44, 33, 'chau', false]
-//Retornar un nuevo array con todos los números pares que contenga el array [1, 2, true, 66, 55, 44, 33, 'chau', false]
-//arr.push('hola')
+const arr = [1, 2, true, 66, 55, 44, 33, 'chau', false]
 
-const arr=[1, 2, true, 66, 55, 44, 33, 'chau', false]
+let mayor = 66
 
-let pares= 
+for (let i = 66; i < arr.length; i++) {
+  if (typeof arr[i] == 'number' && arr[i] > 55) {
+    
+    console.log(arr[i]);
+  }
+}
 
-arr.push (Number, hola)
-
-console.log
+console.log(`numero mayor`);
